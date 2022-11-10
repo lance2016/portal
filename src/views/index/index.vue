@@ -1,16 +1,29 @@
 <template>
   <div>
     <header>
-      <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+        rel="stylesheet"
+      />
     </header>
 
     <h1>Animation Buttons</h1>
     <p>Hover us and enjoy the satisfying neumorphic animation designs!</p>
     <div class="frame">
-      <button class="custom-btn btn-1" @click="jumpDetailPage('/starSky')">星系</button>
-      <button class="custom-btn btn-2" @click="jumpDetailPage('/parallaxScroll')">落日</button>
-      <button class="custom-btn btn-3">
-        <span>Read More</span>
+      <button class="custom-btn btn-1" @click="jumpDetailPage('/starSky')">
+        星系
+      </button>
+      <button
+        class="custom-btn btn-2"
+        @click="jumpDetailPage('/parallaxScroll')"
+      >
+        落日
+      </button>
+      <button
+        class="custom-btn btn-3"
+        @click="handle('http://49.234.42.199:10240/')"
+      >
+        <span>Jenkins</span>
       </button>
       <button class="custom-btn btn-4">
         <span>Read More</span>
@@ -41,7 +54,7 @@
       <button class="custom-btn btn-14">Read More</button>
       <button class="custom-btn btn-15">Read More</button>
       <button class="custom-btn btn-16">Read More</button>
-      <p style="font-family: Andale Mono, monospace;">DEERBUCKS.DESIGNING</p>
+      <p style="font-family: Andale Mono, monospace">DEERBUCKS.DESIGNING</p>
     </div>
   </div>
 </template>
@@ -53,10 +66,13 @@ export default {
   methods: {
     jumpDetailPage(path) {
       this.$router.push({
-        path: path
+        path: path,
       });
-    }
-  }
+    },
+    handle(url) {
+      window.open(url, "_blank");
+    },
+  },
 };
 </script>
 <style scoped>
