@@ -21,9 +21,9 @@
       </button>
       <button
         class="custom-btn btn-3"
-        @click="handle('http://49.234.42.199:10240/')"
+        @click="handle('http://49.234.42.199:8848/nacos')"
       >
-        <span>Jenkins</span>
+        <span>Nacos</span>
       </button>
       <button class="custom-btn btn-4">
         <span>Read More</span>
