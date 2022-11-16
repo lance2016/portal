@@ -25,8 +25,13 @@
       >
         <span>Nacos</span>
       </button>
-      <button class="custom-btn btn-4">
-        <span>Read More</span>
+      <button
+        class="custom-btn btn-4"
+        @click="
+          handle('https://console.cloud.tencent.com/lighthouse/instance/index')
+        "
+      >
+        <span>Server</span>
       </button>
       <button class="custom-btn btn-5">
         <span>Read More</span>
