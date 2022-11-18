@@ -39,8 +39,11 @@
       >
         <span>Sentinel</span>
       </button>
-      <button class="custom-btn btn-6">
-        <span>Read More</span>
+      <button
+        class="custom-btn btn-6"
+        @click="handle('http://49.234.42.199:17001/')"
+      >
+        <span>FRP DashBoard</span>
       </button>
       <button class="custom-btn btn-7">
         <span>Read More</span>
