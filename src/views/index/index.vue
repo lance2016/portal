@@ -78,9 +78,15 @@
         <span>FRP DashBoard</span>
       </button>
     </div>
+    <div class="frame">
+      <button class="custom-btn btn-13"
+      @click="handle(' http://49.234.42.199:15672/#/')">
+      Rabbit MQ
+      </button>
+    </div>
     <div class="frame" id="other">
-      <button class="custom-btn btn-9">Read More</button>
-      <button class="custom-btn btn-10">Read More</button>
+      <button class="custom-btn btn-9">MySQL 8</button>
+      <button class="custom-btn btn-10">Redis</button>
       <button class="custom-btn btn-11">
         Read More
         <div class="dot"></div>
@@ -89,7 +95,6 @@
         <span>Click!</span>
         <span>Read More</span>
       </button>
-      <button class="custom-btn btn-13">Read More</button>
       <button class="custom-btn btn-14">Read More</button>
       <button class="custom-btn btn-15">Read More</button>
       <button class="custom-btn btn-16">Read More</button>
