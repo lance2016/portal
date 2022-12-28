@@ -7,24 +7,11 @@
       />
     </header>
 
-    <h1>Animation Buttons</h1>
-    <p>Hover us and enjoy the satisfying neumorphic animation designs!</p>
+    <h1>App Guide</h1>
+    <p>应用导航</p>
+
+    <!-- Server -->
     <div class="frame">
-      <button class="custom-btn btn-1" @click="jumpDetailPage('/starSky')">
-        星系
-      </button>
-      <button
-        class="custom-btn btn-2"
-        @click="jumpDetailPage('/parallaxScroll')"
-      >
-        落日
-      </button>
-      <button
-        class="custom-btn btn-3"
-        @click="handle('http://49.234.42.199:8848/nacos')"
-      >
-        <span>Nacos</span>
-      </button>
       <button
         class="custom-btn btn-4"
         @click="
@@ -33,24 +20,65 @@
       >
         <span>Server</span>
       </button>
+    </div>
+    <!-- spring cloud alibaba -->
+    <div class="frame" id="spring_cloud">
+      <button
+        class="custom-btn btn-3"
+        @click="handle('http://49.234.42.199:8848/nacos')"
+      >
+        <span>Nacos</span>
+      </button>
       <button
         class="custom-btn btn-5"
         @click="handle('http://49.234.42.199:8858/#/dashboard/home')"
       >
         <span>Sentinel</span>
       </button>
+    </div>
+
+
+    <div class="frame" id="elastic_search">
+      <button
+        class="custom-btn btn-6"
+        @click="handle('http://49.234.42.199:9200/')"
+      >
+      <span>ES</span>
+      </button>
+      <button
+        class="custom-btn btn-7"
+        @click="handle('http://49.234.42.199:9100/')"
+      >
+        <span>ES head</span>
+      </button>
+      <button
+        class="custom-btn btn-8"
+        @click="handle('http://49.234.42.199:5601/')"
+      >
+        <span>kibana</span>
+      </button>
+    </div>
+
+    <div class="frame" id="sight_stype">
+        <button class="custom-btn btn-1" @click="jumpDetailPage('/starSky')">
+        星系
+      </button>
+      <button
+        class="custom-btn btn-2"
+        @click="jumpDetailPage('/parallaxScroll')"
+      >
+        落日
+      </button>
+    </div>
+    <div class="frame" id="frp">
       <button
         class="custom-btn btn-6"
         @click="handle('http://49.234.42.199:17001/')"
       >
         <span>FRP DashBoard</span>
       </button>
-      <button class="custom-btn btn-7">
-        <span>Read More</span>
-      </button>
-      <button class="custom-btn btn-8">
-        <span>Read More</span>
-      </button>
+    </div>
+    <div class="frame" id="other">
       <button class="custom-btn btn-9">Read More</button>
       <button class="custom-btn btn-10">Read More</button>
       <button class="custom-btn btn-11">
@@ -65,7 +93,8 @@
       <button class="custom-btn btn-14">Read More</button>
       <button class="custom-btn btn-15">Read More</button>
       <button class="custom-btn btn-16">Read More</button>
-      <p style="font-family: Andale Mono, monospace">DEERBUCKS.DESIGNING</p>
+    
+      <p style="font-family: Andale Mono, monospace">To be continued...</p>
     </div>
   </div>
 </template>
